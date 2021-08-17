@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import Header from "../components/Home/Header";
 
 const Home = () => {
   return (
     <>
-      <Link to="/SignUp">to signup</Link>
+      <Header />
     </>
   );
 };

@@ -7,14 +7,18 @@ const Globals = createGlobalStyle`
     --white: hsl(0, 0%, 100%);
     --lightBlue: hsl(228, 100%, 75%);
     --blue: hsl(228, 100%, 66%);
-    --grayishBlye: hsl(227, 13%, 52%);
+    --grayishBlue: hsl(227, 13%, 52%);
     --darkBlue: hsl(228, 22%, 26%);
     --veryDarkBlue: hsl(229, 22%, 19%);
     --red: hsl(0, 83%, 65%);
 
     /* radius */
     --mainRadius: 1rem;
+    --btnRadius: 5rem;
 
+    /* grid gap */
+    --gap: 5rem; 
+      
     /* shadows */
     --mainShadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .2);
 
@@ -46,6 +50,7 @@ const Globals = createGlobalStyle`
   body {
     font-family: 'Kumbh Sans', sans-serif;
     overflow-x: hidden;
+    position: relative;
   }
 
   img {
