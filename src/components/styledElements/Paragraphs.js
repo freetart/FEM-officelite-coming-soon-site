@@ -1,11 +1,16 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { textStyles } from "../../abstracts/Mixins";
 
 const Paragraph = styled.p`
   ${textStyles}
-  font-size: 1.8rem;
-  padding: 2rem 0;
-  color: var(--grayishBlue);
+
+  ${({ hero }) =>
+    hero &&
+    css`
+      font-size: 1.8rem;
+      color: var(--grayishBlue);
+      padding: 2rem 0;
+    `}
 `;
 
 export default Paragraph;

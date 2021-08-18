@@ -17,6 +17,20 @@ const Button = styled.button`
       background-color: var(--blue);
       color: var(--white);
     `}
+
+  ${({ secondary }) =>
+    secondary &&
+    css`
+      background-color: var(--veryLightBlue);
+      color: var(--blue);
+    `}
+
+  ${({ tertiary }) =>
+    tertiary &&
+    css`
+      background-color: var(--white);
+      color: var(--blue);
+    `}
 `;
 
 export default Button;

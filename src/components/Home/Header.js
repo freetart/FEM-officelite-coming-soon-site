@@ -38,7 +38,7 @@ const Header = () => {
           <MainHeading>
             A simple solution to complex tasks is coming soon
           </MainHeading>
-          <Paragraph>
+          <Paragraph hero>
             Say goodbye to inefficient juggling of multiple apps, teams, and
             projects. Officelite is the new collaboration platform built with an
             intuitive interface to improve productivity.
