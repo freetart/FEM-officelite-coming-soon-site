@@ -19,6 +19,14 @@ const Paragraph = styled.p`
       font-size: 1.6rem;
       color: var(--grayishBlue);
     `}
+
+  ${({ countSignup }) =>
+    countSignup &&
+    css`
+      ${headingStyles}
+      font-size: 1.6rem;
+      color: var(--blue);
+    `}
 `;
 
 export default Paragraph;

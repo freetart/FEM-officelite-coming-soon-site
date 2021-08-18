@@ -36,7 +36,7 @@ const Tag = () => {
       <h3 className="tag-heading">
         project for{" "}
         <a
-          href="https://www.frontendmentor.io/challenges/typemaster-prelaunch-landing-page-J6-Yj5J-X"
+          href="https://www.frontendmentor.io/challenges/officelite-coming-soon-site-M4DIPNz8g"
           target="_blank"
           rel="noreferrer"
           className="tag-link"

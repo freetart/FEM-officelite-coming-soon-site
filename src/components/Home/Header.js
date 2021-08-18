@@ -5,11 +5,11 @@ import Paragraph from "../styledElements/Paragraphs";
 import Button from "../styledElements/Buttons";
 import headerImg from "../../assets/home/illustration-charts.svg";
 import bgPattern from "../../assets/home/bg-pattern-header.svg";
-import { maxWidthLg, sectionSpacingSm } from "../../abstracts/Mixins";
+import { maxWidthLg, sectionSpacingMd } from "../../abstracts/Mixins";
 
 const Container = styled.div`
   ${maxWidthLg}
-  ${sectionSpacingSm}
+  ${sectionSpacingMd}
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;

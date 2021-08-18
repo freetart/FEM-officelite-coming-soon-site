@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
+import SignUpHeader from "../components/SignUp/SignUpHeader";
 
 const SignUp = () => {
   return (
     <>
-      <Link to="/">home</Link>
+      <SignUpHeader />
     </>
   );
 };

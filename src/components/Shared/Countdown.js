@@ -3,6 +3,12 @@ import { textStyles } from "../../abstracts/Mixins";
 import Count from "./Count";
 
 const Container = styled.div`
+  &.signup-countdown {
+    .countdown-title {
+      color: var(--darkBlue);
+    }
+  }
+
   .countdown-title {
     ${textStyles}
     text-transform: uppercase;
@@ -24,10 +30,10 @@ const Container = styled.div`
   }
 `;
 
-const Countdown = () => {
+const Countdown = ({ signup }) => {
   return (
     <div>
-      <Container>
+      <Container className={signup && "signup-countdown"}>
         <h2 className="countdown-title">
           Coming <span className="countdown-time">4 Nov 2021</span>
         </h2>
