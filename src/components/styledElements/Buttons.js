@@ -10,12 +10,18 @@ const Button = styled.button`
   font-size: 1.6rem;
   display: inline-block;
   box-shadow: var(--mainShadow);
+  transition: var(--mainTransition);
 
   ${({ primary }) =>
     primary &&
     css`
       background-color: var(--blue);
       color: var(--white);
+
+      &:hover,
+      &:focus {
+        background-color: var(--lightBlue);
+      }
     `}
 
   ${({ secondary }) =>
@@ -23,14 +29,24 @@ const Button = styled.button`
     css`
       background-color: var(--veryLightBlue);
       color: var(--blue);
+
+      &:hover,
+      &:focus {
+        background-color: var(--veryLightBlueActive);
+      }
     `}
 
-  ${({ tertiary }) =>
+    ${({ tertiary }) =>
     tertiary &&
     css`
       background-color: var(--white);
       color: var(--blue);
-    `}
+
+      &:hover,
+      &:focus {
+        color: var(--lightBlue);
+      }
+    `};
 `;
 
 export default Button;

@@ -9,6 +9,7 @@ const Globals = createGlobalStyle`
     --blue: hsl(228, 100%, 66%);
     --grayishBlue: hsl(227, 13%, 52%);
     --veryLightBlue: hsl(228, 100%, 96%);
+    --veryLightBlueActive: hsl(228, 100%, 92%);
     --darkBlue: hsl(228, 22%, 26%);
     --veryDarkBlue: hsl(229, 22%, 19%);
     --red: hsl(0, 83%, 65%);

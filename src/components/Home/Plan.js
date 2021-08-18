@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { headingStyles, textStyles } from "../../abstracts/Mixins";
 import Button from "../styledElements/Buttons";
 import primaryPattern from "../../assets/home/bg-pattern-pricing.svg";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   text-align: center;
@@ -75,9 +76,13 @@ const Plan = ({ isPrimary, type, cost, description, features, buttonType }) => {
             ))}
           </ul>
           {buttonType === "secondary" ? (
-            <Button secondary>Try for Free</Button>
+            <Link to="/SignUp">
+              <Button secondary>Try for Free</Button>
+            </Link>
           ) : (
-            <Button tertiary>Try for Free</Button>
+            <Link to="/SignUp">
+              <Button tertiary>Try for Free</Button>
+            </Link>
           )}
         </div>
       </Container>
