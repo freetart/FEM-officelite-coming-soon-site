@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { headingStyles } from "../../abstracts/Mixins";
 
-const Button = styled.button`
+const Button = styled.span`
   ${headingStyles}
   border: 0;
   outline: 0;
