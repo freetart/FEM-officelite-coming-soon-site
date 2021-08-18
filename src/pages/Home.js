@@ -1,11 +1,15 @@
 import Header from "../components/Home/Header";
 import Plans from "../components/Home/Plans";
+import Cta from "../components/Home/Cta";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Plans />
+      <main>
+        <Plans />
+        <Cta />
+      </main>
     </>
   );
 };

@@ -9,6 +9,7 @@ const Container = styled.div`
   padding: 3rem;
   box-shadow: var(--mainShadow);
   border-radius: var(--mainRadius);
+  background-color: var(--white);
   position: relative;
   overflow: hidden;
 

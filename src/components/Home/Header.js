@@ -23,7 +23,7 @@ const Container = styled.div`
 
   .header-bg-pattern {
     position: absolute;
-    top: -50%;
+    top: -25%;
     right: -10%;
     width: 65%;
     z-index: 1;
