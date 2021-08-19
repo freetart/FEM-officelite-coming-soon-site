@@ -27,20 +27,6 @@ const Button = styled.span`
       }
     `}
 
-  ${({ primaryForm }) =>
-    primaryForm &&
-    css`
-      background-color: var(--blue);
-      color: var(--white);
-      text-align: center;
-      display: block;
-
-      &:hover,
-      &:focus {
-        background-color: var(--lightBlue);
-      }
-    `}
-
   ${({ secondary }) =>
     secondary &&
     css`

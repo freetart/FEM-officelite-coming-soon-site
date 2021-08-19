@@ -54,9 +54,7 @@ const Countdown = () => {
 
   // update every second
   useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(time - 1);
-    }, 1000);
+    const interval = setInterval(() => setTime(time - 1), 1000);
 
     return () => clearInterval(interval);
   }, [time]);
