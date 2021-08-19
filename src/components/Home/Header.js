@@ -6,6 +6,7 @@ import Button from "../styledElements/Buttons";
 import headerImg from "../../assets/home/illustration-charts.svg";
 import bgPattern from "../../assets/home/bg-pattern-header.svg";
 import { maxWidthLg, sectionSpacingMd } from "../../abstracts/Mixins";
+import Responsive from "../../abstracts/Responsive";
 
 const Container = styled.div`
   ${maxWidthLg}
@@ -14,6 +15,20 @@ const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: var(--gap);
+  overflow-x: hidden;
+
+  ${Responsive.xl`
+    padding: 20rem 2rem 2rem 2rem;
+  `}
+
+  ${Responsive.lg`
+    padding: 10rem 2rem 2rem 2rem;
+  `}
+
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+    text-align: center;
+  `}
 
   .header-info,
   .header-img {
@@ -23,10 +38,23 @@ const Container = styled.div`
 
   .header-bg-pattern {
     position: absolute;
-    top: -25%;
-    right: -10%;
-    width: 65%;
+    top: -10%;
+    right: 0%;
+    width: 55%;
     z-index: 1;
+
+    ${Responsive.xl`
+      top: -5%;
+    `}
+
+    ${Responsive.md`
+      right: 0%;
+      width: 70%;
+    `}
+
+    ${Responsive.sm`
+      width: 100%;
+    `}
   }
 `;
 

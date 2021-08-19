@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { textStyles } from "../../abstracts/Mixins";
 import Count from "./Count";
+import Responsive from "../../abstracts/Responsive";
 
 const Container = styled.div`
   &.signup-countdown {
@@ -15,6 +16,10 @@ const Container = styled.div`
     font-size: 2.6rem;
     color: var(--white);
     margin-bottom: 1rem;
+
+    ${Responsive.md`
+      text-align: center;
+    `}
   }
 
   .countdown-time {
@@ -25,6 +30,8 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     gap: var(--gap);
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
     z-index: 5;
   }

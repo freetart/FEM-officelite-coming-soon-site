@@ -3,6 +3,7 @@ import { headingStyles, textStyles } from "../../abstracts/Mixins";
 import Button from "../styledElements/Buttons";
 import primaryPattern from "../../assets/home/bg-pattern-pricing.svg";
 import { Link } from "react-router-dom";
+import Responsive from "../../abstracts/Responsive";
 
 const Container = styled.div`
   text-align: center;
@@ -29,6 +30,16 @@ const Container = styled.div`
   .plan-content {
     position: relative;
     z-index: 5;
+
+    ${Responsive.lg`
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    `}
+
+    ${Responsive.sm`
+      flex-direction: column;
+    `}
   }
 
   .plan-type {
@@ -66,25 +77,29 @@ const Plan = ({ isPrimary, type, cost, description, features, buttonType }) => {
           <img src={primaryPattern} alt="" className="plan-pattern" />
         )}
         <div className="plan-content">
-          <p className="plan-type">{type}</p>
-          <h3 className="plan-cost">{cost}</h3>
-          <p className="plan-desc">{description}</p>
-          <ul className="plan-list">
-            {features.map((feature, index) => (
-              <li key={index} className="plan-feature">
-                {feature}
-              </li>
-            ))}
-          </ul>
-          {buttonType === "secondary" ? (
-            <Link to="/SignUp">
-              <Button secondary>Try for Free</Button>
-            </Link>
-          ) : (
-            <Link to="/SignUp">
-              <Button tertiary>Try for Free</Button>
-            </Link>
-          )}
+          <div>
+            <p className="plan-type">{type}</p>
+            <h3 className="plan-cost">{cost}</h3>
+            <p className="plan-desc">{description}</p>
+          </div>
+          <div>
+            <ul className="plan-list">
+              {features.map((feature, index) => (
+                <li key={index} className="plan-feature">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            {buttonType === "secondary" ? (
+              <Link to="/SignUp">
+                <Button secondary>Try for Free</Button>
+              </Link>
+            ) : (
+              <Link to="/SignUp">
+                <Button tertiary>Try for Free</Button>
+              </Link>
+            )}
+          </div>
         </div>
       </Container>
     </article>

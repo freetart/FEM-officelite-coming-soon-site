@@ -10,12 +10,12 @@ const Header = styled.header`
   display: flex;
   align-items: center;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 
   .signup-bg {
+    height: 110vh;
+    width: 100vw;
     background-color: var(--veryDarkBlue);
-    height: 100%;
-    width: 100%;
     position: relative;
     overflow: hidden;
 

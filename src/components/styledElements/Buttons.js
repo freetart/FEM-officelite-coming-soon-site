@@ -12,6 +12,8 @@ const Button = styled.span`
   box-shadow: var(--mainShadow);
   transition: var(--mainTransition);
   cursor: pointer;
+  position: relative;
+  z-index: 5;
 
   ${({ primary }) =>
     primary &&
