@@ -8,6 +8,7 @@ import bgPattern from "../../assets/sign-up/bg-pattern-side.svg";
 
 const Header = styled.header`
   display: flex;
+  align-items: center;
   height: 100vh;
   width: 100%;
 
@@ -33,6 +34,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
+  align-items: center;
 
   .signup-header-info {
     transform: translateX(27rem);

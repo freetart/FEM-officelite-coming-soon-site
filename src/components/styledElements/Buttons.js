@@ -11,12 +11,27 @@ const Button = styled.span`
   display: inline-block;
   box-shadow: var(--mainShadow);
   transition: var(--mainTransition);
+  cursor: pointer;
 
   ${({ primary }) =>
     primary &&
     css`
       background-color: var(--blue);
       color: var(--white);
+
+      &:hover,
+      &:focus {
+        background-color: var(--lightBlue);
+      }
+    `}
+
+  ${({ primaryForm }) =>
+    primaryForm &&
+    css`
+      background-color: var(--blue);
+      color: var(--white);
+      text-align: center;
+      display: block;
 
       &:hover,
       &:focus {
