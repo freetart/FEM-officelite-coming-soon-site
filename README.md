@@ -2,6 +2,8 @@
 
 2 page website challenge for frontend mentor
 
+site: https://fem-officelite-coming-soon-site-challenge.netlify.app/
+
 #### Features
 - date countdown
 - clientside form validation
