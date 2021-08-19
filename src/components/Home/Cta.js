@@ -49,7 +49,7 @@ const Cta = () => {
     <Section>
       <Container>
         <img className="cta-bg-pattern" src={bgPattern} alt="" />
-        <Countdown signup={false} />
+        <Countdown />
         <Link to="/SignUp">
           <Button primary>Get Started</Button>
         </Link>
