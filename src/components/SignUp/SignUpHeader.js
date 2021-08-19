@@ -5,12 +5,12 @@ import Countdown from "../Shared/Countdown";
 import { maxWidthLg, sectionSpacingSm } from "../../abstracts/Mixins";
 import SignUpForm from "./SignUpForm";
 import bgPattern from "../../assets/sign-up/bg-pattern-side.svg";
+import Responsive from "../../abstracts/Responsive";
 
 const Header = styled.header`
   display: flex;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
   background: url(${bgPattern}) top center/cover no-repeat;
   background-color: var(--veryDarkBlue);
 `;
@@ -22,6 +22,14 @@ const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: var(--gap);
   align-items: center;
+
+  ${Responsive.lg`
+    text-align: center; 
+  `}
+
+  ${Responsive.md`
+    grid-template-columns: 1fr;
+  `}
 `;
 
 const SignUpHeader = () => {

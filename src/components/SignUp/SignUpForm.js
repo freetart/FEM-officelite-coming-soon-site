@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { textStyles } from "../../abstracts/Mixins";
 import Button from "../styledElements/Buttons";
+import Responsive from "../../abstracts/Responsive";
 
 const Container = styled.div`
   background-color: var(--white);
@@ -10,6 +11,18 @@ const Container = styled.div`
   padding: 5rem;
   border-radius: var(--mainRadius);
   box-shadow: var(--mainShadow);
+
+  ${Responsive.xl`
+    width: 400px;
+  `}
+
+  ${Responsive.md`
+    width: 100%;
+  `}
+
+  ${Responsive.xs`
+    padding: 2rem;
+  `}
 
   .form-control {
     margin: 2rem 0;
