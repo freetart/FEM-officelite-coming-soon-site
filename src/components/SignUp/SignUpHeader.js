@@ -37,8 +37,10 @@ const SignUpHeader = () => {
     <Header>
       <Container>
         <div className="signup-header-info">
-          <MainHeading signup>Work smarter. Save time.</MainHeading>
-          <Paragraph hero>
+          <MainHeading signup data-aos="fade-up">
+            Work smarter. Save time.
+          </MainHeading>
+          <Paragraph hero data-aos="fade-up" data-aos-delay="100">
             Easily manage your projects. Get on the list and receive in-app
             perks available only to early subscribers. We are moving into final
             development and getting ready for official launch soon.

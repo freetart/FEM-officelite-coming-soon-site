@@ -33,11 +33,10 @@ const Container = styled.div`
 `;
 
 const Countdown = () => {
+  // get future date & current date
   const [time, setTime] = useState(
     new Date("June 8, 2022 00:00:00").getTime() || 0
   );
-
-  // get future date & current date
   const now = new Date().getTime();
   const gap = time - now;
 
@@ -63,7 +62,7 @@ const Countdown = () => {
   }, [time]);
 
   return (
-    <div>
+    <div data-aos="fade-in" data-aos-delay="400">
       <Container>
         <h2 className="countdown-title">
           Coming <span className="countdown-time">8 June 2022</span>

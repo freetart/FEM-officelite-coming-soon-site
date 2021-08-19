@@ -19,7 +19,7 @@ const Container = styled.div`
 
 const Plans = () => {
   return (
-    <section>
+    <section data-aos="fade-in" data-aos-delay="200">
       <Container>
         {planData.map((plan) => (
           <Plan

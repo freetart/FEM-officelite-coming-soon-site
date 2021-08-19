@@ -63,19 +63,27 @@ const Header = () => {
     <header>
       <Container>
         <div className="header-info">
-          <MainHeading>
+          <MainHeading data-aos="fade-up">
             A simple solution to complex tasks is coming soon
           </MainHeading>
-          <Paragraph hero>
+          <Paragraph hero data-aos="fade-up" data-aos-delay="100">
             Say goodbye to inefficient juggling of multiple apps, teams, and
             projects. Officelite is the new collaboration platform built with an
             intuitive interface to improve productivity.
           </Paragraph>
           <Link to="/SignUp">
-            <Button primary>Get Started</Button>
+            <Button primary data-aos="fade-up" data-aos-delay="200">
+              Get Started
+            </Button>
           </Link>
         </div>
-        <img className="header-img" src={headerImg} alt="charts" />
+        <img
+          className="header-img"
+          src={headerImg}
+          alt="charts"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        />
         <img className="header-bg-pattern" src={bgPattern} alt="" />
       </Container>
     </header>

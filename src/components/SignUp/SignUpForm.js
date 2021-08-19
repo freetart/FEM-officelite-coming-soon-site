@@ -41,7 +41,7 @@ const Container = styled.div`
 
 const SignUpForm = () => {
   return (
-    <form>
+    <form data-aos="fade-down" data-aos-delay="300">
       <Container>
         <div className="form-control">
           <input type="text" placeholder="Name..." className="form-input" />
