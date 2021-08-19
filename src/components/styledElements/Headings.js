@@ -10,6 +10,12 @@ export const MainHeading = styled.h1`
   ${Responsive.xs`
     font-size: 5rem;
   `}
+
+  ${({ signup }) =>
+    signup &&
+    css`
+      color: var(--white);
+    `}
 `;
 
 export const SubHeading = styled.h2`

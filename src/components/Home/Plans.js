@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Plan from "./Plan";
 import planData from "../../data";
 import { maxWidthLg, sectionSpacingSm } from "../../abstracts/Mixins";
@@ -12,8 +12,7 @@ const Container = styled.div`
   gap: var(--gap);
   transform: translateY(20rem);
 
-  ${Responsive.lg &&
-  css`
+  ${Responsive.lg`
     grid-template-columns: 1fr;
   `}
 `;

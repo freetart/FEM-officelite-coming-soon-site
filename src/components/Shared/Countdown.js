@@ -4,12 +4,6 @@ import Count from "./Count";
 import Responsive from "../../abstracts/Responsive";
 
 const Container = styled.div`
-  &.signup-countdown {
-    .countdown-title {
-      color: var(--darkBlue);
-    }
-  }
-
   .countdown-title {
     ${textStyles}
     text-transform: uppercase;
@@ -37,10 +31,10 @@ const Container = styled.div`
   }
 `;
 
-const Countdown = ({ signup }) => {
+const Countdown = () => {
   return (
     <div>
-      <Container className={signup && "signup-countdown"}>
+      <Container>
         <h2 className="countdown-title">
           Coming <span className="countdown-time">4 Nov 2021</span>
         </h2>

@@ -3,7 +3,6 @@ import { textStyles } from "../../abstracts/Mixins";
 import Button from "../styledElements/Buttons";
 
 const Container = styled.div`
-  transform: translateX(40rem);
   background-color: var(--white);
   width: 600px;
   z-index: 5;
