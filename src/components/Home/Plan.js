@@ -69,7 +69,15 @@ const Container = styled.div`
   }
 `;
 
-const Plan = ({ isPrimary, type, cost, description, features, buttonType }) => {
+const Plan = ({
+  isPrimary,
+  type,
+  cost,
+  description,
+  features,
+  buttonType,
+  scrollToTop,
+}) => {
   return (
     <article>
       <Container className={isPrimary && "plan-primary"}>
@@ -91,11 +99,11 @@ const Plan = ({ isPrimary, type, cost, description, features, buttonType }) => {
               ))}
             </ul>
             {buttonType === "secondary" ? (
-              <Link to="/SignUp">
+              <Link to="/SignUp" onClick={scrollToTop}>
                 <Button secondary>Try for Free</Button>
               </Link>
             ) : (
-              <Link to="/SignUp">
+              <Link to="/SignUp" onClick={scrollToTop}>
                 <Button tertiary>Try for Free</Button>
               </Link>
             )}

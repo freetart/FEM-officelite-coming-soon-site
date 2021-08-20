@@ -25,15 +25,17 @@ const Nav = styled.nav`
 `;
 
 const Home = () => {
+  const scrollToTop = () => window.scrollTo(0, 0);
+
   return (
     <>
       <Nav>
         <img className="logo" src={logo} alt="officelite logo" />
       </Nav>
-      <Header />
+      <Header scrollToTop={scrollToTop} />
       <main>
-        <Plans />
-        <Cta />
+        <Plans scrollToTop={scrollToTop} />
+        <Cta scrollToTop={scrollToTop} />
       </main>
       <Tag />
     </>

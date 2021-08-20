@@ -44,13 +44,13 @@ const Container = styled.div`
   }
 `;
 
-const Cta = () => {
+const Cta = ({ scrollToTop }) => {
   return (
     <Section>
       <Container>
         <img className="cta-bg-pattern" src={bgPattern} alt="" />
         <Countdown />
-        <Link to="/SignUp">
+        <Link to="/SignUp" onClick={scrollToTop}>
           <Button primary>Get Started</Button>
         </Link>
       </Container>

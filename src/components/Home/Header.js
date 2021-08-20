@@ -58,7 +58,7 @@ const Container = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = ({ scrollToTop }) => {
   return (
     <header>
       <Container>
@@ -71,7 +71,7 @@ const Header = () => {
             projects. Officelite is the new collaboration platform built with an
             intuitive interface to improve productivity.
           </Paragraph>
-          <Link to="/SignUp">
+          <Link to="/SignUp" onClick={scrollToTop}>
             <Button primary data-aos="fade-up" data-aos-delay="200">
               Get Started
             </Button>

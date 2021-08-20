@@ -17,7 +17,7 @@ const Container = styled.div`
   `}
 `;
 
-const Plans = () => {
+const Plans = ({ scrollToTop }) => {
   return (
     <section data-aos="fade-in" data-aos-delay="200">
       <Container>
@@ -30,6 +30,7 @@ const Plans = () => {
             description={plan.description}
             features={plan.features}
             buttonType={plan.buttonType}
+            scrollToTop={scrollToTop}
           />
         ))}
       </Container>
