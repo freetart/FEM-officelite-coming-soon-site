@@ -15,7 +15,6 @@ const Container = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: var(--gap);
-  overflow-x: hidden;
 
   ${Responsive.xl`
     padding: 20rem 2rem 2rem 2rem;
