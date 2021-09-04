@@ -14,7 +14,7 @@ site: https://fem-officelite-coming-soon-site-challenge.netlify.app/
 - react
 - styled components
 
-#### Dependencies
+#### Libraries
 - aos.js
 - react-router-dom
 - react-hook-form 
